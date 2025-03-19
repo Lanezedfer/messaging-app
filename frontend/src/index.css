@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("/images/background.png") no-repeat center / cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::webkit-scroller {
+  cursor: pointer;
+  width: 8px;
+}
+
+::webkit-scrollbar-track {
+  background: #555;
+  cursor: pointer;
+}
+
+::webkit-scrollbar-thumb {
+  background: #121212;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Transpile TypeScript code to ECMAScript 2020.
+    "module": "NodeNext", // Use the modern ESM (ECMAScript Modules) system for Node.js.
+    "moduleResolution": "NodeNext", // Ensure module resolution follows Node.js behavior for ESM.
+    "outDir": "./backend/dist", // Compiled JavaScript files will be outputted to backend/dist.
+    "rootDir": "./backend", // Source TypeScript files are located in backend directory.
+    "strict": true, // Enable strict type-checking.
+    "esModuleInterop": true, // Allow default imports from CommonJS modules.
+    "skipLibCheck": true // Skip type checking of declaration files (.d.ts).
+  },
+  "ts-node": {
+    "esm": true // Ensure ts-node (TypeScript execution in Node.js) runs in ESM mode.
+  },
+  "include": ["backend/src/**/*"], //  Compile all .ts files in backend/src/.
+  "exclude": ["node_modules", "**/*.spec.ts", "frontend"] // Exclude dependencies, test files, and the frontend folder.
+}
